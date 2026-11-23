@@ -2,7 +2,7 @@
 
 ## Where to resume
 
-Continue with AP-1 in a feature branch from main. Agent B has no assignment yet.
+Continue with AP-2 on `feat/demo-guest-journey`. The owner requested a demo. Agent B has no assignment yet.
 
 ## Project identity
 
@@ -20,7 +20,7 @@ PostgreSQL and Prisma are proposed for durable data and migrations. Maintained s
 
 ## Database and API contracts
 
-No database schema or public API is deployed. The architecture milestone owns the initial entity model, route contracts, ownership checks, booking invariants, and migrations. One listing represents one bookable unit. Store stay dates as property-local calendar dates and event times as UTC instants. Store money in integer paise.
+[Database contracts](docs/DATABASE.md) and [API contracts](docs/API.md) describe the proposed interfaces. No database or public API is deployed. One listing represents one bookable unit. Store stay dates as property-local calendar dates and event times as UTC instants. Store money in integer paise.
 
 ## Design system
 
@@ -34,12 +34,12 @@ Warm ivory and navy define the bootstrap page. The contrast-safe terracotta text
 
 ## Feature implementation
 
-| Feature                                                                | Status      | Owner      | Branch | Acceptance and evidence                                 | Main files                 |
-| ---------------------------------------------------------------------- | ----------- | ---------- | ------ | ------------------------------------------------------- | -------------------------- |
-| Bootstrap                                                              | IN_PROGRESS | Agent A    | main   | Local checks and GitHub verification pending            | app/, README.md, AGENTS.md |
-| Product and architecture                                               | NOT_STARTED | Agent A    | TBD    | Document domain roles, flows, states, and API contracts | docs/                      |
-| Brand and discovery shell                                              | NOT_STARTED | Unassigned | TBD    | Accessible responsive routes with original assets       | app/, public/              |
-| Authentication, listings, search, booking, payments, trips, operations | NOT_STARTED | Unassigned | TBD    | Each requires its own verified vertical slice           | TBD                        |
+| Feature                                                                | Status      | Owner      | Branch                  | Acceptance and evidence                                 | Main files                 |
+| ---------------------------------------------------------------------- | ----------- | ---------- | ----------------------- | ------------------------------------------------------- | -------------------------- |
+| Bootstrap                                                              | IN_PROGRESS | Agent A    | main                    | Local checks and GitHub verification pending            | app/, README.md, AGENTS.md |
+| Product and architecture                                               | IN_REVIEW   | Agent A    | feat/demo-guest-journey | Document domain roles, flows, states, and API contracts | docs/                      |
+| Brand and discovery shell                                              | NOT_STARTED | Unassigned | TBD                     | Accessible responsive routes with original assets       | app/, public/              |
+| Authentication, listings, search, booking, payments, trips, operations | NOT_STARTED | Unassigned | TBD                     | Each requires its own verified vertical slice           | TBD                        |
 
 ## Task ownership and active paths
 
@@ -57,3 +57,5 @@ See [AGENTS.md](AGENTS.md) for the working agreement. No external service or dep
 ## Handoff
 
 23 November 2026 · Agent A bootstrapped main after the initial wiki commit (8d8116e). Node 24.22.3 verified: npm ci, formatting, lint, typecheck, production build, and HTTP 200 for the home route on dev and production servers. ESLint 9 remains pinned for Next’s lint plugin peer compatibility. GitHub-hosted CI is configured and should be checked on the branch head.
+
+See [PRD](docs/PRD.md), [architecture](docs/ARCHITECTURE.md), [threat model](docs/SECURITY.md), [owner decisions](docs/USER_DECISIONS.md), and [ADR 0001](docs/adr/0001-modular-monolith.md). AP-1 contracts are ready for review. The demo should use synthetic records and simulated prices and reservations.
