@@ -5,7 +5,7 @@
 | Release intent        | Confirmed 23 November 2026 | Demo                                                                                                                         |
 | Design and budget     | Provisional                | Warm ivory, navy, and terracotta. Use free local development tooling.                                                        |
 | Markets               | Provisional                | Goa, Manali, Jaipur, and Bengaluru                                                                                           |
-| Inventory             | Provisional                | Fictional demo properties with clear labels                                                                                  |
+| Inventory             | Confirmed 23 November 2026 | Fictional demo properties with clear labels                                                                                  |
 | Booking               | Provisional                | Simulate instant booking                                                                                                     |
 | Audience              | Provisional                | Indian leisure travelers, families, and independent hosts                                                                    |
 | Pricing               | Provisional                | INR with illustrative nightly prices and cleaning fees. No assumed tax or commission rates.                                  |
