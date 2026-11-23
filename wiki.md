@@ -2,14 +2,14 @@
 
 ## Where to resume
 
-Agent A owns bootstrap and architecture. Agent B has no assignment yet.
+Continue with AP-1 in a feature branch from main. Agent B has no assignment yet.
 
 ## Project identity
 
 - Repository [vasudharajoli/Apna-Stay](https://github.com/vasudharajoli/Apna-Stay)
 - Goal: an Indian accommodation marketplace for guests, hosts, and operations staff.
-- Release target: sandbox or closed-beta MVP pending owner direction.
-- Application status: bootstrap in progress.
+- Release target: owner-confirmed demo.
+- Application status: runnable Next.js bootstrap.
 - Last repository audit: 23 November 2026. Main was configured and there were no branches, open pull requests, or open issues.
 
 ## Technology stack and architecture
@@ -45,7 +45,7 @@ Warm ivory and navy define the bootstrap page. The contrast-safe terracotta text
 
 | Task ID | Description                     | Agent   | Branch | Owned paths                    | Status      | Dependencies        |
 | ------- | ------------------------------- | ------- | ------ | ------------------------------ | ----------- | ------------------- |
-| AP-0    | Initialize repository and CI    | Agent A | main   | Bootstrap source and root docs | IN_PROGRESS | GitHub write access |
+| AP-0    | Initialize repository and CI    | Agent A | main   | Bootstrap source and root docs | DONE        | GitHub write access |
 | AP-1    | Define product and architecture | Agent A | TBD    | docs/ and wiki.md              | NOT_STARTED | AP-0                |
 
 Agent A coordinates shared architecture, migrations, booking, payments, integration, and releases. Agent B may take explicitly assigned isolated work. Review active PRs and this table before claiming paths. Coordinate wiki updates if two PRs touch it.
@@ -56,4 +56,4 @@ See [AGENTS.md](AGENTS.md) for the working agreement. No external service or dep
 
 ## Handoff
 
-23 November 2026 · Agent A audited the empty repository. After bootstrapping, record the branch, commit or PR, check results, and continuation point here.
+23 November 2026 · Agent A bootstrapped main after the initial wiki commit (8d8116e). Node 24.22.3 verified: npm ci, formatting, lint, typecheck, production build, and HTTP 200 for the home route on dev and production servers. ESLint 9 remains pinned for Next’s lint plugin peer compatibility. GitHub-hosted CI is configured and should be checked on the branch head.
