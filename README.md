@@ -1,6 +1,6 @@
 # Apna Stay
 
-An India-focused accommodation marketplace. The bootstrap app provides the public home route. Booking, host tools, and provider integrations are planned milestones.
+An India-focused accommodation marketplace. The guest demo includes destination and guest filters, fictional property details, INR quotes, and a simulated reservation. It runs with synthetic inventory and requires no external services.
 
 ## Start locally
 
@@ -11,8 +11,8 @@ npm ci
 npm run dev
 ```
 
-Open [localhost:3000](http://localhost:3000). The bootstrap app requires zero service credentials.
+Open [localhost:3000](http://localhost:3000). Choose a fictional stay, enter future dates, calculate the total, and select **Simulate reservation**.
 
-Run `npm run format:check`, `npm run lint`, `npm run typecheck`, and `npm run build` before opening a pull request.
+Run `npm run format:check`, `npm run lint`, `npm run typecheck`, `npm test`, and `npm run build` before opening a pull request.
 
 Start with [AGENTS.md](AGENTS.md) and [wiki.md](wiki.md) for engineering ownership, branch coordination, and current verification.
